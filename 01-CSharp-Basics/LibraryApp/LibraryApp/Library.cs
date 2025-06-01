@@ -23,7 +23,16 @@ namespace LibraryApp
         {
             foreach (Book book in list)
             {
-                book.PrintInfo();
+                if (book.IsClassic())
+                {
+                    Console.WriteLine("This book is Classic.");
+                    book.PrintInfo();
+                }
+                else
+                {
+                    Console.WriteLine("This book is Modern.");
+                    book.PrintInfo();
+                }
             }
         }
     }

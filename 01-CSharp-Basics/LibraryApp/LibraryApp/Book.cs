@@ -19,6 +19,11 @@ namespace LibraryApp
             Date = date;
         }
 
+        public bool IsClassic()
+        {
+            return Date < DateOnly.Parse("1990-01-01");
+        }
+
         public void PrintInfo()
         {
             Console.WriteLine($"Title: {Title}, Author: {Author}, Date: {Date}.");
