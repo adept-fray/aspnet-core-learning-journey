@@ -27,7 +27,7 @@ namespace MediaLibraryApp
 
         public override void PrintInfo()
         {
-            Console.WriteLine($"EBook title: {Title}, author: {Author}, price{Price}, size: {Size}.");
+            Console.WriteLine($"EBook title: {Title}, author: {Author}, price{Price:c}, size: {Size}.");
         }
     }
 }
